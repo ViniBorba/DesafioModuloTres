@@ -6,6 +6,15 @@ public class TerminalDasafioModuloTres {
 		
 		PesquisaBinaria pb = new PesquisaBinaria();
 		System.out.println(pb.pesquisaBinaria(array, 6));
-		//pb.pesquisaBinaria(array, 3);
+		
+		
+		int[] arrayDes = {3, 2, 10, 7, 8, 4};
+		
+		Ordenar ordem = new Ordenar();
+		
+		System.out.println(ordem.selectionSort(arrayDes));
+		for(int i =0; i < arrayDes.length; i++) {
+			System.out.print(" "+arrayDes[i]);
+		}
 	}
 }
