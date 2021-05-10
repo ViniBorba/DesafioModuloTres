@@ -17,12 +17,29 @@ public class Ordenar {
 				return selectionSort(array, percorreArray +1, menor, sairDaPilha);
 			}
 			int T = array[sairDaPilha];
-			//array[sairDaPilha] = menor;
-			//array[sairDaPilha] = T;
-			//array[sairDaPilha] = menor;
 			array[sairDaPilha] = array[menor];
 			array[menor] =T;
 			return selectionSort(array, sairDaPilha +1, sairDaPilha +1, sairDaPilha +1);
+		}
+		return array;
+	}
+	
+	public int[] insertionSort(int[] array) throws IllegalArgumentException{
+		if(array == null)
+			throw new IllegalArgumentException();
+		int B =0;
+		return insertionSort(array, 0, B, 0);
+		
+	}
+	private int[] insertionSort(int[] array, int elemento, int B, int contador) {
+		if(contador < array.length) {
+			if((elemento >0) && (array[elemento -1] > B)) {
+				array[elemento] = array[elemento -1];
+				return insertionSort(array, elemento -1, B, contador);
+			} else {
+				array[elemento] = B;
+				return insertionSort(array, contador, array[contador], contador +1);
+			}
 		}
 		return array;
 	}

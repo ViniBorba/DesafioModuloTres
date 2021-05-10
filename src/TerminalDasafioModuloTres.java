@@ -16,5 +16,14 @@ public class TerminalDasafioModuloTres {
 		for(int i =0; i < arrayDes.length; i++) {
 			System.out.print(" "+arrayDes[i]);
 		}
+		
+		
+		int[] arrayNos = {3, 2, 10, 7, 8, 4};
+		
+		Ordenar ordem2 = new Ordenar();
+		System.out.println(ordem2.insertionSort(arrayDes));
+		for(int i =0; i < arrayDes.length; i++) {
+			System.out.print(" "+arrayDes[i]);
+		}
 	}
 }
