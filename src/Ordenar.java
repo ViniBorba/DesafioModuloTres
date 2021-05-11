@@ -27,7 +27,7 @@ public class Ordenar {
 	public int[] insertionSort(int[] array) throws IllegalArgumentException{
 		if(array == null)
 			throw new IllegalArgumentException();
-		int B =0;
+		int B = array[0];
 		return insertionSort(array, 0, B, 0);
 		
 	}

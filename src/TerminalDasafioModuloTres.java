@@ -8,7 +8,7 @@ public class TerminalDasafioModuloTres {
 		System.out.println(pb.pesquisaBinaria(array, 6));
 		
 		
-		int[] arrayDes = {3, 2, 10, 7, 8, 4};
+		int[] arrayDes = {3, 2, 10, 1, 8, 9, 45};
 		
 		Ordenar ordem = new Ordenar();
 		
@@ -18,7 +18,7 @@ public class TerminalDasafioModuloTres {
 		}
 		
 		
-		int[] arrayNos = {3, 2, 10, 7, 8, 4};
+		int[] arrayNos = {3, 2, 10, 1, 8, 9, 45};
 		
 		Ordenar ordem2 = new Ordenar();
 		System.out.println(ordem2.insertionSort(arrayDes));
